@@ -64,7 +64,23 @@ body, html {
     overflow: scroll;
     margin: 0 auto;
     width: 85%;
+    /* height: 100%; */
 }
+
+/* .wrap-btn {
+    margin: 20px;
+    margin-top: 60%;
+    float: center;
+}
+
+.loadMore {
+    padding-top: 30px;
+    padding: 20px;
+}
+
+.box-hidden {
+    display: none;
+} */
 
 .section-light {
     background-color: #f4f4f4;
@@ -126,7 +142,8 @@ body, html {
 
 div.gallery {
   margin: 20px;
-  float: left;
+  /* float: left; */
+  display: inline-block;
 }
 
 div.desc {

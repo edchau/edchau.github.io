@@ -1,6 +1,13 @@
 window.onload = init;
 
 function init() {
+    // const section = document.getElementsByClassName('pimg1')[0];
+    // section.addEventListener('mousemove', (e) =>{
+    //   const moveX = (e.pageX * -1 / 50);
+    //   const moveY = (e.pageY * -1 / 50);
+
+    //   section.style.backgroundPosition = moveX + 'px ' + moveY + 'px';
+    // });
     modal1()
     modal2()
     modal3()

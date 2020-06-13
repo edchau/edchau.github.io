@@ -144,7 +144,7 @@ body, html {
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 15ch }
+    to { width: 14ch }
 }
   
 /* The typewriter cursor effect */

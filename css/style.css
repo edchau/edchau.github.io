@@ -66,7 +66,7 @@
     letter-spacing: .15em; /* Adjust as needed */
     white-space: nowrap;
     animation: 
-        typing 3.5s steps(30, end),
+        typing 2s steps(30, end),
         blink-caret .5s step-end infinite;
 }
 

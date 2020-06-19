@@ -1,310 +1,189 @@
 <!DOCTYPE html>
 <html lang ="en">
-<script type="text/javascript" src="script.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edward</title>
-    <link rel="stylesheet"  href="css/style.css">
-</head>
-<body>
-    <div class=top>
-        <nav class="links" style="--items: 4;">
-            <a href="#">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </div>
-
-    <div class="pimg1" id="home">
-        <div class="typewriter">
-            <h1>
-                Edward Chau
-            </h1>
-        </div>
-    </div>
-
-    <section class="section section-light" id="about">
-        <h2>About Me</h2>
-        <div class="about">
-            <img src="./img/profile.JPG" class="reg-img" width="200" height="150">
-        </div>
-        <div class="about">
-            <p>
-                Hey! My name is Edward and I'm a senior at UC Berkeley
-                studying EECS (Electrical Engineering and Computer Science).
-                My journey in computer science began when I developed my own
-                deep learning model to diagnose tuberculosis in chest x-rays.
-                I presented this at the 2018 Southern California Conference for
-                Undergraduate Research and was recruited by Huntington Medical
-                Research Insitutes' Neuroimaging Lab to work on a project where
-                I segmented brain magnetic resonance images for white matter
-                lesions. In April 2019, I won a research award after presenting
-                at the Honors Transfer Council of California Conference. Ever since
-                then, I've been exploring different fields for artificial intelligence
-                applications. I'm also a full stack developer.
-            </p>
-        </div>
-        <br>
-        <div class="about">
-            <img src="./img/boxing.jpg" class="reg-img" width="200" height="150">
-            <p>
-                When I'm not coding, I love solving rubik's cubes, playing guitar,
-                watching kdramas, boxing, playing video games, and exploring new cooking recipes! 
-                One fun fact about me is that I'm a skincare model for Lalana International
-                in Thailand.
-                I really enjoy meeting new people and I'm always down to grab
-                food/boba, play music, or go on a hike! Feel free to message me about anything!
-            </p>
-        </div>
-        <br>
-        <br>
-    </section>
-
-    <div class="pimg2">
-        <div class="ptext">
-            <span class="border trans">
-                Projects
-            </span>
-        </div>
-    </div>
-
-    <section class="section-work" id="projects">
-        <h2>My Work</h2>
-
-        <div class="gallery">
-            <img id="myImg10" src="./img/rpg.png"
-            alt= "Treasure Hunter is a turn-based RPG made with React and Redux. https://treasure-rpg.herokuapp.com/"
-            style="width: 200px; height:200px;">
-            <div class="desc">Treasure Hunter</div>
-            <!-- The Modal -->
-            <div id="myModal10" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close10">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img10">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption10"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Edward</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://malsup.github.io/jquery.cycle.all.js"></script>
+        <script type="text/javascript">
+            $(document).ready(() => {
+                $('.slideshow').cycle({
+                    fx: 'fade',
+                    speed: 300,
+                    timeout: 2000 
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <section class="parallax-top">
+            <img src="./images/sky.png" id="sky">
+            <img src="./images/moon.png" id="moon">
+            <img src="./images/trees.png" id="trees">
+            <div class="typewriter">
+                <h2 id="title">Edward Chau</h2>
             </div>
-        </div>
+        </section>
 
-        <div class="gallery">
-            <img id="myImg8" src="./img/dds.png"
-            alt="Check-in form application for Douglas Nguyen DDS using Reactjs and Express with MongoDB.
-            During COVID-19, Douglas Nguyen, DDS requires their 50 daily patients to call in notifying staff of their arrival as they wait in their cars for a call back. With this web application, patients can avoid making that phone call and simply check in on this website. On the administrative side, a list of all patients who check in is displayed with some interactive tools to help keep track of who has been attended to."
-            style="width: 200px; height:200px;">
-            <div class="desc">Douglas DDS</div>
-            <!-- The Modal -->
-            <div id="myModal8" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close8">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img08">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption8"></div>
+        <section class="about">
+            <img src="./images/profile.jpg" class="profile">
+            <div class="about-text">
+                <h1>Hi.</h1>
+                <h4>
+                    I'm a full stack engineer and artificial intelligence researcher based in SF/LA studying
+                    Electrical Engineering and Computer Science at the University of California, Berkeley.
+                </h4>
             </div>
-        </div>
-
-        <div class="gallery">
-            <img id="myImg7" src="./img/Gitlet.png"
-            alt="Gitlet is a version control system similar to Git developed in Java. It implements
-                the commands: init, add, commit, rm, log, global-log, find, status,
-                checkout, rm-branch, reset, and merge."
-            style="width: 200px; height:200px;">
-            <div class="desc">Gitlet</div>
-            <!-- The Modal -->
-            <div id="myModal7" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close7">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img07">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption7"></div>
+            <img src="./images/ellipses.png" class="profile" style="height: 20px; width: 50px; margin-top: 50px; opacity: .4; margin-bottom: 50px;">
+       
+ <!--            <div class="slideshow profile">
+                <img src="./images/boxing.png" class="profile">
+                <img src="./images/guitar.png" class="profile">
+                <img src="./images/skincare.png" class="profile">
+            </div> -->
+            <div class="about-text" style="margin-bottom: 40px;">
+                <h1>More About Me.</h1>
+                <h4>
+                    I love boxing, making music, and playing video games. 
+                    One fun fact about me is that I'm a skincare model for Lalana International.
+                </h4>
             </div>
-        </div>
+        </section>
 
-        <div class="gallery">
-            <img id="myImg6" src="./img/LOA.png"
-            alt="Lines of Action is a board game invented by Claude Soucie. The two players take turns, each moving a piece, and possibly capturing an opposing piece. The goal of the game is to get all of one’s pieces into one group of pieces that are connected. Two pieces are connected if they are adjacent horizontally, vertically, or diagonally.
-            This project was developed in Java and includes a GUI as well as AI using the MiniMax Algorithm."
-            style="width: 200px; height:200px;">
-            <div class="desc">Lines of Action</div>
-            <!-- The Modal -->
-            <div id="myModal6" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close6">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img06">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption6"></div>
+        <section class="projects">
+            <img src="./images/lightbulb.jpg" class="profile">
+            <div class="about-text">
+                <h1>What I've been up to.</h1>
+                <h4>
+                    Here are some of my favorite projects. For more of my work, you can visit my
+                    <a href="https://github.com/edchau">Github</a> or 
+                    <a href="https://www.linkedin.com/in/edwchau/">Linkedin</a>.
+                    Feel free to connect with me!
+                </h4>
             </div>
-        </div>
-
-        <div class="gallery">
-            <img id="myImg5" src="./img/Enigma.png"
-            alt="The Enigma machine is an encryption device developed and employed extensively by Nazi Germany during World War II.
-            Enigma has an electromechanical rotor mechanism that scrambles the 26 letters of the alphabet. The rotor mechanism changes the electrical connections between the keys and the lights with each keypress. The receiving station has to know and use the exact settings employed by the transmitting station to successfully decrypt a message.
-            This projcet was developed in Java."
-            style="width: 200px; height:200px;">
-            <div class="desc">Enigma</div>
-            <!-- The Modal -->
-            <div id="myModal5" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close5">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img05">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption5"></div>
+            <div class="gallery">
+                <div class="project" style="background-color: #b0b5b5d2;">
+                    <img src="./images/lmco.jpg" class="profile" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                    <div class="about-text">
+                        <h1 style="color: #fcfcfce5;">Reasoning and Activity Recognition</h1>
+                        <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                            Lockheed Martin<br>
+                            June 2020 - . . . <br><br>
+                            I'm currently researching machine learning for activity recognition using Pytorch. More infomation will
+                            come as my project progresses.
+                        </h4>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #A5CE7C;">
+                    <img src="./images/rpg.png" class="profile" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                    <div class="about-text">
+                        <h1 style="color: #fcfcfca9;">Treasure Hunter</h1>
+                        <h4 style="color: #fcfcfca9; margin-top: 10px;">
+                            June 2020 <br/><br/> This is a small turn-based rpg I made
+                            using React and Redux. It was primarily for me to practice using Redux
+                            and was heavily inspired by Pokemon.
+                            <a href="https://treasure-rpg.herokuapp.com/" style="color: #fcfcfca9;">Link.</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #50AEEE;">
+                    <img src="./images/douglasadmin.png" class="profile" style="margin-top: 45px; border-radius: 10px; width: 55%; height: 55%;">
+                    <div class="about-text">
+                        <h1 style="color: #fcfcfce5;">Douglas Nguyen, DDS</h1>
+                        <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                            May 2020 <br/><br/>
+                            This application made on React and Node.js with MongoDB allows Dr. Douglas' 1500 monthly patients to
+                            check in through a web app instead of having to call in during COVID19 times. The administrative side shows 
+                            an interactive check list of patients that can be managed by staff.
+                        </h4>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #FDBA5B;">
+                    <img src="./images/nasa.png" class="profile" style="margin-top: 45px; border-radius: 10px; width: 35%; height: 35%;">
+                    <div class="about-text">
+                        <h1 style="color: #fcfcfce5;">Anomaly Detection</h1>
+                        <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                            National Aeronautics and Space Administration<br>
+                            June 2019 - August 2019 <br><br>
+                            During my internship at NASA, I developed an unsupervised Convolutional LSTM-Autoencoder for
+                            fault detection in Rate Gyro Sensor data from the Space Launch System.
+                        </h4>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #231F20;">
+                    <img src="./images/hmri.png" class="profile" style="margin-top: 45px; border-radius: 10px; width: 35%; height: 35%;">
+                    <div class="about-text">
+                        <h1 style="color: #fcfcfce5;">Leukoaraiosis Severity Assessment</h1>
+                        <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                            Huntington Medical Research Institutes Neuroimaging Lab<br>
+                            December 2018 - June 2019 <br><br>
+                            Leukoaraiosis is an essential change in white matter with aging, indicating ischemic microvascular disease 
+                            which is now understood to be a significant predictor of risk for Alzheimer’s Disease. I created a U-Net
+                            in Tensorflow that was trained on white matter hyperintensity labels in order to generate a mask of
+                            white white matter damage on T2-FLAIR magnetic resonance images. I presented my work at Honors
+                            Transfer Council of California Research Conference and eventually received a research scholar award with
+                            $1000.
+                        </h4>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #778899;">
+                    <img src="./images/tb.png" class="profile" style="margin-top: 45px; border-radius: 10px; width: 25%; height: 25%;">
+                    <div class="about-text">
+                        <h1 style="color: #ffffff;">Tuberculosis Diagnosis</h1>
+                        <h4 style="color: #ffffff; margin-top: 10px;">
+                            August 2018 - April 2019 <br><br>
+                            This was my first large-scale project. I worked with a professor from the U.S. Airforce Academy
+                            to develop a Convolutional Neural Netowrk in Tensorflow that would diagnose Tuberculosis in chest x-rays. I presented
+                            this at the Southern California Conference for Undergraduate Research and the Honors Transfer Council of California.
+                            This project was noticed by Huntington Medical Research Institutes and I was invited to lead a project at
+                            their neuroimaging lab.
+                        </h4>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="gallery">
-            <img id="myImg4" src="./img/Signpost.png"
-            alt="Signpost is one of Simon Tatham's collection of GUI games.
-            The player's goal is to assign each unnumbered square a sequence number so that the squares form a chain following the arrows from 1 to W⋅H, using up all numbers in between.
-            This project was developed  in Java."
-            style="width: 200px; height:200px;">
-            <div class="desc">Signpost</div>
-            <!-- The Modal -->
-            <div id="myModal4" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close4">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img04">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption4"></div>
+            <div class="about-text">
+                <img src="./images/profile.jpg" class="profile" style="margin-top: 65px;">
+                <h1>Let's Talk.</h1>
+                <h4 style="margin-bottom: 30px;">
+                    The best way to contact me is through edwardchau@berkeley.edu.
+                    Feel free to follow my social media as well. I'd love to chat!
+                    Here is my <a href="./resume.pdf">resume.</a>
+                    <br><br>
+                    <a href="https://www.instagram.com/edwarddchau/">Instagram.</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.twitch.tv/melodyreborn">Twitch.</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://m.me/edward.chau.906/">Messenger.</a>
+                </h4>
+                <br>
+                <h5 style="padding-bottom: 10px;">
+                    Icons drawn by
+                    <a href="https://www.instagram.com/phantomsoybean/" style="font-size: 12px;">@phantomsoybean</a>.
+                    <br>
+                    © Copyright Edward Chau 2020
+                </h5>
             </div>
-        </div>
+        </section>
 
-        <div class="gallery">
-            <img id="myImg3" src="./img/scheme.png"
-            alt="Interpreter for a subset of the Scheme language developed in Python."
-            style="width: 200px; height:200px;">
-            <div class="desc">Scheme Interpreter</div>
-            <!-- The Modal -->
-            <div id="myModal3" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close3">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img03">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption3"></div>
-            </div>
-        </div>
+        <script type="text/javascript">
+            let bg = document.getElementById("sky")
+            let moon = document.getElementById("moon")
+            let trees = document.getElementById("trees")
+            let title = document.getElementById("title")
 
-        <div class="gallery">
-            <img id="myImg9" src="./img/nasa.png"
-            alt="NASA's Guidance Navigation and Mission Analysis team utilizes a Sensor Data Quality program to detect faults on Rate Gyro Assembly (RGA) data.
-                The goal of this project was to develop an unsupervised deep learning approach to learn fault detection and apply it RGA as well as other sensors on the Space Launch System."
-            style="width: 200px; height:200px;">
-            <div class="desc">Anomaly Detection</div>
-            <!-- The Modal -->
-            <div id="myModal9" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close9">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img09">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption9"></div>
-            </div>
-        </div>
+            window.addEventListener('scroll', () => {
+                var val = window.scrollY;
+                bg.style.top = val * .5 + 'px'
+                moon.style.left = val * .5 + 'px'
+                trees.style.top = val * .15 + 'px'
+                title.style.top = val * 1 + 'px'
+            })
+        </script>
+    </body>
 
-        <div class="gallery">
-            <img id="myImg2" src="./img/hmri.png"
-            alt="Leukoaraiosis is an essential change in white matter (WM) with aging, indicating ischemic microvascular disease which is now understood to be a significant predictor of risk for Alzheimer’s Disease. 
-            A U-Net was trained on white matter hyperintensities labels and successfully generated a map of white matter damage in T2-FLAIR magnetic resonance images."
-            style="width: 200px; height:200px;">
-            <div class="desc">Leukoaraiosis Intensity</div>
-            <!-- The Modal -->
-            <div id="myModal2" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close2">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img02">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption2"></div>
-            </div>
-        </div>
 
-        <div class="gallery">
-            <img id="myImg" src="./img/tb.png"
-            alt="Utilized a Convolutional Neural Network to diagnose tuberculosis in chest x-rays (first project that was inspired by Baymax)!"
-            style="width: 200px; height:200px;">
-            <div class="desc">Tuberculosis Diagnosis</div>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-            
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-            
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
-            </div>
-        </div>
-    </section>
-
-    <div class="pimg3">
-        <div class="ptext">
-            <span class="border trans">
-                Contact
-            </span>
-        </div>
-    </div>
-
-    <section class="section section-light" id="contact">
-        <h2>Let's Talk!</h2>
-        <h3>
-            <img src="img/location.png" width="20" height="17">&nbsp;Berkeley, CA / Los Angeles, CA
-            <br>
-            <br>
-            <img src="img/phone.png" width="15" height="15">&nbsp;Phone: (626) 233-8921
-            <br>
-            <br>
-            <img src="img/email.png" width="15" height="15">&nbsp;Email: edwardchau@berkeley.edu
-        </h3>
-    </section>
-</body>
-<footer class="section section-dark">
-    <div class="foot">
-        <nav class="links" style="--items: 5;">
-            <a href="https://www.twitch.tv/melodyreborn"><img src="img/twitch.png" width="35" height="35"></a>
-            <a href="https://www.instagram.com/edwarddchau/"><img src="img/insta.png" width="35" height="35"></a>
-            <a href="https://github.com/edchau"><img src="img/github.png" width="35" height="35"></a>
-            <a href="https://www.linkedin.com/in/edwchau/"><img src="img/linkedin.png" width="35" height="35"></a>
-            <a href="http://m.me/edward.chau.906/"><img src="img/msg.png" width="35" height="35"></a>
-        </nav>
-    </div>
-</footer>
 </html>

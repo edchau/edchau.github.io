@@ -88,7 +88,7 @@
     }
 
     #title {
-        font-size: 50px;
+        font-size: 45px;
     }
     
 }
@@ -124,7 +124,6 @@
 
 .about-text {
     text-align: center;
-    /* display: inline-block; */
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -146,7 +145,6 @@
     font-family: 'Poppins';
     font-size: 15px;
     color: #000000af;
-    /* margin-bottom: 70px; */
     padding-bottom: 70px;
 }
 

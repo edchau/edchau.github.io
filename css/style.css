@@ -106,7 +106,7 @@
     height: 150px;
     width: 150px;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about h1 {
@@ -119,7 +119,7 @@
     color: rgb(221, 221, 221);
     font-family: 'Poppins';
     font-size: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .about-text {
@@ -130,7 +130,7 @@
 
 .projects {
     min-height: 350px;
-    padding-top: 70px;
+    padding-top: 30px;
     background-color: #fff;
     color: #624ae9;
 }
@@ -161,7 +161,7 @@
 
 .project {
     min-height: 350px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .project img {

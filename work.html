@@ -172,7 +172,7 @@
                 catch(err) {}
                 isSafari = (isSafari || ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1))));
     
-                if (!isSafari) {
+                if (!isSafari || window.screen.width > 1000) {
                     window.addEventListener('scroll', () => {
                         var val = window.scrollY;
                         l1.style.top = val * .6 + 'px'
@@ -181,7 +181,7 @@
                         l4.style.top = val * .45 + 'px'
                         l5.style.top = val * .4 + 'px'
                         l6.style.top = val * .35 + 'px'
-                        l7.style.top = val * .15 + 'px'
+                        l7.style.top = val * .30 + 'px'
                         l8.style.top = val * .1 + 'px'
                         l9.style.left = -val * .2 + 'px'
                         birds.style.left = val * .4 + 'px'

@@ -113,7 +113,7 @@ nav a:hover {
     background: #143434;
     min-height: 350px;
     padding-top: 45px;
-    padding-bottom: 250px;
+    /* padding-bottom: 250px; */
 }
 
 .profile {

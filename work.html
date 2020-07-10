@@ -162,21 +162,32 @@
                 let l9 = document.getElementById("l9")
                 let birds = document.getElementById("birds")
                 let title = document.getElementById("title")
+                
+                var isSafari = window.safari !== undefined;
+                var ua = navigator.userAgent.toLowerCase(); 
+                var isSafari = false;
+                try {
+                isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+                }
+                catch(err) {}
+                isSafari = (isSafari || ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1))));
     
-                window.addEventListener('scroll', () => {
-                    var val = window.scrollY;
-                    // l1.style.top = val * .6 + 'px'
-                    l2.style.top = val * .55 + 'px'
-                    // l3.style.top = val * .5 + 'px'
-                    l4.style.top = val * .45 + 'px'
-                    // l5.style.top = val * .4 + 'px'
-                    // l6.style.top = val * .35 + 'px'
-                    // l7.style.top = val * .15 + 'px'
-                    l8.style.top = val * .1 + 'px'
-                    l9.style.left = -val * .2 + 'px'
-                    birds.style.left = val * .4 + 'px'
-                    title.style.top = val * 1 + 'px'
-                })
+                if (!isSafari) {
+                    window.addEventListener('scroll', () => {
+                        var val = window.scrollY;
+                        l1.style.top = val * .6 + 'px'
+                        l2.style.top = val * .55 + 'px'
+                        l3.style.top = val * .4 + 'px'
+                        l4.style.top = val * .45 + 'px'
+                        l5.style.top = val * .4 + 'px'
+                        l6.style.top = val * .35 + 'px'
+                        l7.style.top = val * .15 + 'px'
+                        l8.style.top = val * .1 + 'px'
+                        l9.style.left = -val * .2 + 'px'
+                        birds.style.left = val * .4 + 'px'
+                        title.style.top = val * 1 + 'px'
+                    })
+                }
             </script>
         <script type="text/javascript" src="./js/fade.js"></script>
     </body>

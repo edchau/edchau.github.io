@@ -172,7 +172,7 @@
                 catch(err) {}
                 isSafari = (isSafari || ((ua.indexOf('safari') != -1)&& (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1))));
     
-                if (!isSafari || window.screen.width > 1000) {
+                if (!isSafari && window.screen.width > 1000) {
                     window.addEventListener('scroll', () => {
                         var val = window.scrollY;
                         l1.style.top = val * .6 + 'px'

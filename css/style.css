@@ -11,14 +11,14 @@
 
 .links {
 	background-color: transparent;
-    font-size: 18;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
+    font-size: 23px;
+    font-family: "Poppins";
+    font-weight: 500px;
     position: absolute;
     z-index: 1;
 }
 .links > a {
-	color: #9ab;
+	color: rgb(109, 115, 121);
 	padding: .75em;
 	text-align: left;
 	text-decoration: none;
@@ -30,16 +30,6 @@
 	color: rgb(168, 215, 247);
 }
 
-nav a {
-    color: #BDFCC9;
-    font-family: 'Poppins';
-    font-size: 18px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #86a186;
-}
 .parallax-top {
     position: relative;
     width: 100%;

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Edward</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://malsup.github.io/jquery.cycle.all.js"></script>
+    </head>
+    <body>
+        <div class=top>
+            <nav class="links" style="--items: 3;">
+                <a href="index.html">Home.</a>
+                <a href="work.html">Projects.</a>
+                <a href="classes.html">Classes.</a>
+            </nav>
+        </div>
+        <section class="parallax-top">
+            <img src="./images/background/background_0011_Color-Fill-1.png" id="sky" class="rellax">
+            <img src="./images/background/background_0010_Layer-1.png" id="l1" class="rellax" data-rellax-speed = -9>
+            <img src="./images/background/background_0008_Layer-2.png" id="l2" class="rellax" data-rellax-speed = -8>
+            <img src="./images/background/background_0007_Layer-3.png" id="l3" class="rellax" data-rellax-speed = -7>
+            <img src="./images/background/background_0006_Layer 4.png" id="l4" class="rellax" data-rellax-speed = -6>
+            <img src="./images/background/background_0005_Layer 5.png" id="l5" class="rellax" data-rellax-speed = -5>
+            <img src="./images/background/background_0004_Layer 6.png" id="l6" class="rellax" data-rellax-speed = -4>
+            <img src="./images/background/background_0003_Layer 7.png" id="l7" class="rellax" data-rellax-speed = -3>
+            <img src="./images/background/background_0001_Layer 8.png" id="l8" class="rellax" data-rellax-speed = -2>
+            <img src="./images/background/background_0000_Layer 9.png" id="l9" class="rellax">
+            <img src="./images/background/background_0009_birds.png" id="birds" class="rellax">
+            <!-- <div class="typewriter"> -->
+            <h2 id="title" style="font-size: 45px; margin-top: 15%;" class="rellax" data-rellax-speed = -10>My Coursework.</h2>
+            <!-- </div> -->
+        </section>
+        <section class="projects">
+            <img src="./images/lightbulb.jpg" class="profile">
+            <div class="about-text">
+                <h1>Classes</h1>
+                <h4>
+                    <a href="https://www.eecs16a.org/">EECS16A</a>: Designing Information Devices and Systems I <br>
+                    <a href="https://www.eecs16B.org/">EECS16B</a>: Designing Information Devices and Systems I <br>
+                    <a href="https://cs61a.org/">CS61A</a>: Structure and Interpretation of Computer Programs <br>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61b">CS61B</a>: Data Structures <br>
+                    <a href="https://cs61c.org/">CS61C</a>: Computer Architecture (Machine Structures) <br>
+                    <a href="https://www.eecs70.org/">CS70</a>: Discrete Math and Probability <br>
+                    <a href="http://www.ds100.org/">Data100</a>: Principles and Techniques of Data Science <br>
+                    <a href="https://cs170.org/">CS170</a>: Efficient Algorithms and Intractable Problems <br>
+                </h4>
+            </div>
+            <div class="project" style="background-color: #8B8682;">
+                <img src="./images/classify.png" class="profile fade-in" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                <div class="about-text">
+                    <h1 style="color: #fcfcfce5;">Classify</h1>
+                    <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                        CS61C <br/>
+                        October 2020 <br/><br/>
+                        Classify is an artificial neural network built in RISC-V (assembly) to classify handwritten digits from the MNIST benchmark
+                        set for CS61C.
+                    </h4>
+                </div>
+            </div>
+            <div class="project" style="background-color: #20201f;">
+                <img src="./images/JohnConway.gif" class="profile fade-in" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                <div class="about-text">
+                    <h1 style="color: #fcfcfce5;">Game of Life</h1>
+                    <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                        CS61C <br/>
+                        September 2020 <br/><br/>
+                        The Game of Life, invented by mathematician John Conway, is a cellular automation, where the evolution
+                        of each cell depends on the initial state and a provided game rule. I developed
+                        a version of the Game of Life in C.
+                    </h4>
+                </div>
+            </div>
+            <div class="project" style="background-color: #F08080;">
+                <img src="./images/gitlet.png" class="profile fade-in" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                <div class="about-text">
+                    <h1 style="color: #fcfcfce5;">Gitlet</h1>
+                    <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                        CS61B <br/>
+                        May 2020 <br/><br/>
+                        Gitlet is a version control system similar to Git that I developed in Java. It implements
+                        the commands: init, add, commit, rm, log, global-log, find, status,
+                        checkout, rm-branch, reset, and merge.
+                    </h4>
+                </div>
+            </div>
+            <div class="project" style="background-color: #CD853F;">
+                <img src="./images/LOA.png" class="profile fade-in" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                <div class="about-text">
+                    <h1 style="color: #fcfcfce5;">Lines of Action</h1>
+                    <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                        CS61B <br/>
+                        April 2020 <br/><br/>
+                        Lines of Action is a two player board game. The objective is to connect all of one's pieces into a single group.
+                        I developed LOA in Java and built an AI using the Minimax algorithm.
+                    </h4>
+                </div>
+            </div>
+            <div class="project" style="background-color: #20201f;">
+                <img src="./images/Enigma.png" class="profile fade-in" style="margin-top: 45px; border-radius: 10px; width: 45%; height: 45%;">
+                <div class="about-text">
+                    <h1 style="color: #fcfcfce5;">Enigma</h1>
+                    <h4 style="color: #fcfcfce5; margin-top: 10px;">
+                        CS61B <br/>
+                        March 2020 <br/><br/>
+                        Enigma is an encryption device that Germany used for military communication during World War II that use an electromechanical rotor mechanism to scramble
+                        the letters of the alphabet. I developed a generalized version of Enigma in Java.
+                    </h4>
+                </div>
+            </div>
+
+        <script type="text/javascript" src="./js/fade.js"></script>
+        <script type="text/javascript" src="./js/fade.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+        <script>
+          var rellax = new Rellax('.rellax');
+        </script>
+    </body>
+
+</html>
